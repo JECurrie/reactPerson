@@ -1,6 +1,6 @@
 let person = {
-  name: 'Tyron',
-  age: 40,
+  name: 'Joan',
+  age: 24,
   weekendAlarm: 'No alarms needed',
   weekAlarm: 'Alarm set to 7AM'
 };
