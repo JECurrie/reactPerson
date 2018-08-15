@@ -3,12 +3,24 @@ let person = {
   age: 24,
   weekendAlarm: 'No alarms needed',
   weekAlarm: 'Alarm set to 7AM',
-  sayHello: () => {
-    return 'Hello, there!';
-  }    
+  
+  sayHello: function() {
+    return `Hello, my name is ${this.name}`;
+  },
+  
+  sayGoodbye() {
+    return 'Goodbye!';
+  }
+  
 };
 
 console.log(person.sayHello());
+
+person.hobbies = ['Basketball', 'Coaching'];
+person.hobbies = ['Basketball'];
+console.log(person.hobbies);
+
+
 console.log(person['name']);
 console.log(person['age']);
 
@@ -22,5 +34,3 @@ if (day === 'Saturday' || day === 'Sunday' ) {
 }
 
 console.log(person[alarm]);
-person.hobbies = ['Hiking', 'Biking'];
-console.log(person.hobbies);
