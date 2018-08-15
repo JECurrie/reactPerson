@@ -11,12 +11,19 @@ let person = {
   sayGoodbye() {
     return 'Goodbye!';
   }
-  
 };
 
+
+let friend = {
+  name: 'Charles'
+};
+
+friend.sayHello = person.sayHello;
+
+console.log(friend.sayHello());
 console.log(person.sayHello());
 
-person.hobbies = ['Basketball', 'Coaching'];
+person.hobbies = ['Hiking', 'Biking'];
 person.hobbies = ['Basketball'];
 console.log(person.hobbies);
 
